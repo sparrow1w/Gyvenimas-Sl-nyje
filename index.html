@@ -9,12 +9,167 @@
 
 <body>
     <div class="content">
-        <header></header>
-        <section class="gallerySlide"></section>
-        <section class="positionNav"></section>
+        <header>
+            <a href="#">
+                <h1>Logo</h1>
+            </a>
+            <nav class="meniuItems">
+                <ul>
+                    <li>
+                        <a href="#">Kotedžai</a>
+                    </li>
+                    <li>
+                        <a href="#">Gyvenimas Slėnyje</a>
+                    </li>
+                    <li>
+                        <a href="#">Galerija</a>
+                    </li>
+                    <li>
+                        <a href="#">Gyventojams</a>
+                    </li>
+                    <li>
+                        <a href="#">Naujienos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="gallerySlide">
+            <h1>Gyvenimas Slėnyje</h1>
+            <button class="btn-Prev"></button>
+            <button class="btn-Next"></button>
+            <article>
+                <h2>Netoliese Gilužio ežeras</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.
+                </p>
+                <button>Klausyti</button>
+                <div class="picPosition"></div>
+            </article>
+        </section>
+        <section class="positionNav">
+            <h1>Vieta Mieste</h1>
+            <div class="map-field">
+                <div class="mini-menu">
+                    <nav class="mini-items">
+                        <ul>
+                            <li>
+                                <a href="#">Shops</a>
+                            </li>
+                            <li>
+                                <a href="#">library</a>
+                            </li>
+                            <li>
+                                <a href="#">Hospital</a>
+                            </li>
+                            <li>
+                                <a href="#">schools</a>
+                            </li>
+                            <li>
+                                <a href="#">gyms</a>
+                            </li>
+                            <li>
+                                <a href="#">Banks</a>
+                            </li>
+                            <li>
+                                <a href="#">Parks</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu-list">
+                        <div class="shop-list">
+                            <ul>
+                                <li>pirma parduotuvė</li>
+                                <li>antra parduotuvė</li>
+                                <li>trečia parduotuvė</li>
+                                <li>ketvirta parduotuvė</li>
+                            </ul>
+                        </div>
+                        <div class="library-list">
+                            <ul>
+                                <li>pirma biblioteka</li>
+                                <li>antra biblioteka</li>
+                                <li>trečia biblioteka</li>
+                                <li>ketvirta biblioteka</li>
+                            </ul>
+                        </div>
+                        <div class="hospital-list">
+                            <ul>
+                                <li>Poliklinika</li>
+                                <li>Vaistinė "Pilanta"</li>
+                                <li>Šeimos sveikatos namai "Gyda"</li>
+                                <li>Marijos Vaistinė</li>
+                                <li>Eurovaistinė (prekybos centre "Pupa")</li>
+                                <li>B. Kiselienės sveikatingumo studija</li>
+                            </ul>
+                        </div>
+                        <div class="school-list">
+                            <ul>
+                                <li>pirma mokykla</li>
+                                <li>antra mokykla</li>
+                                <li>trečia mokykla</li>
+                            </ul>
+                        </div>
+                        <div class="gym-list">
+                            <ul>
+                                <li>pirmas sporto klubas</li>
+                                <li>antras sporto klubas</li>
+                                <li>trečias sporto klubas</li>
+                            </ul>
+                        </div>
+                        <div class="bank-list">
+                            <ul>
+                                <li>pirmas bankas</li>
+                                <li>antras bankas</li>
+                                <li>trečias bankas</li>
+                                <li>ketvirtas bankas</li>
+                            </ul>
+                        </div>
+                        <div class="park-list">
+                            <ul>
+                                <li>pirmas parkas</li>
+                                <li>antras parkas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section class="slider"></section>
-        <section class="form"></section>
-        <footer></footer>
+        <section class="form">
+            <div class="contacts">
+                <h2>Kontaktai</h2>
+                <div class="first-contact">
+                    <p>Laura Žvaliauskaitė</p>
+                    <p>Pardavimų vadybininkė</p>
+                    <p>laura@cc.lt</p>
+                    <p>+37065556408</p>
+                </div>
+                <div class="second-contact">
+                    <p>Monika Kuzminskaitė</p>
+                    <p>Pardavimų vadybininkė</p>
+                    <p>monika.k@cc.lt</p>
+                    <p>+37068202272</p>
+                </div>
+            </div>
+            <form name="login-form" action="/action_page.php" onsubmit="return onFormSubmit()" method="post">
+                <h3>Laiko rezervacija susitikimui</h3>
+                <input type="text" name="email" placeholder="El. paštas">
+                <br>
+                <input type="text" name="phone" placeholder="Telefonas">
+                <br>
+                <textarea id="myTextarea" name="comment" placeholder="Rezervuoju laiką susitikimui x d, x val."></textarea>
+                <br>
+                <input type="submit" value="Siųsti">
+                <div id="p1"></div>
+            </form>
+        </section>
+        <footer>
+            <p>©2016. Visos teisės saugomos</p>
+            <p>e-solution: Gaumina</p>
+        </footer>
     </div>
     <script src="js/some.js"></script>
 </body>
