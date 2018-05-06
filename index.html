@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Gyvenimas Slėnyje</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -16,39 +19,90 @@
             <nav class="meniuItems">
                 <ul>
                     <li>
-                        <a href="#">Kotedžai</a>
-                    </li>
-                    <li>
-                        <a href="#">Gyvenimas Slėnyje</a>
-                    </li>
-                    <li>
-                        <a href="#">Galerija</a>
+                        <a href="#">Naujienos</a>
                     </li>
                     <li>
                         <a href="#">Gyventojams</a>
                     </li>
                     <li>
-                        <a href="#">Naujienos</a>
+                        <a href="#">Galerija</a>
+                    </li>
+                    <li>
+                        <a href="#">Gyvenimas Slėnyje</a>
+                    </li>
+                    <li>
+                        <a href="#">Kotedžai</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section class="gallerySlide">
-            <h1>Gyvenimas Slėnyje</h1>
-            <button class="btn-Prev"></button>
-            <button class="btn-Next"></button>
-            <article>
-                <h2>Netoliese Gilužio ežeras</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur.
-                </p>
-                <button>Klausyti</button>
-                <div class="picPosition"></div>
-            </article>
+            <h1>Gyvenimas
+                <strong>Slėnyje</strong>
+            </h1>
+            <div class="btn-block">
+                <button class="btn-Prev x"><i class="fas fa-angle-left"></i></button>
+                <button class="btn-Next"><i class="fas fa-angle-right"></i></button>
+            </div>
+
+            <div class="brown-field">
+                <div class="priv-box">
+                    <p>PRIVALUMAS NR. 1</p>
+                </div>
+                <div class="text-field">
+                    <div class="picPosition">
+                        <img src="src/lake.jpg" alt="lake" width="410px" height="555px">
+                    </div>
+                    <article>
+                        <h1>Netoliese -
+                            <strong>Gilužio ežeras</strong>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <button>
+                            <i class="fas fa-music"></i>Klausyti</button>
+                    </article>
+                </div>
+                <div class="text-field">
+                        <div class="picPosition">
+                            <img src="src/PREZENTACIJA1.jpg" alt="lake" width="410px" height="555px">
+                        </div>
+                        <article>
+                            <h1>ka=asfsdfa -
+                                <strong>Gilužio ežeras</strong>
+                            </h1>
+                            <p>sdafsdfsdfsdaf ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <button>
+                                <i class="fas fa-music"></i>Klausyti</button>
+                        </article>
+                    </div>
+                    <div class="text-field">
+                            <div class="picPosition">
+                                <img src="src/PREZENTACIJA1.jpg" alt="lake" width="410px" height="555px">
+                            </div>
+                            <article>
+                                <h1>ka=asfsdfa -
+                                    <strong>Gilužio ežeras</strong>
+                                </h1>
+                                <p>sdafsdfsdfsdaf ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                                <button>
+                                    <i class="fas fa-music"></i>Klausyti</button>
+                            </article>
+                        </div>
+            </div>
         </section>
-        <section class="positionNav">
+        <section class="navPosition">
             <h1>Vieta Mieste</h1>
             <div class="map-field">
                 <div class="mini-menu">
@@ -137,7 +191,9 @@
 
             </div>
         </section>
-        <section class="slider"></section>
+        <section class="slider">
+            <img src="src/PREZENTACIJA1.jpg" alt="citus">
+        </section>
         <section class="form">
             <div class="contacts">
                 <h2>Kontaktai</h2>
