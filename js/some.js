@@ -3,40 +3,51 @@
 //     $(".priv-box p").text("PRIVALUMAS NR. 2"),350;
 //   });
 
-  $(function() {
-  
-    var $left = $('.btn-Prev'),
-        $right = $('.btn-Next'),
-        $count = $('.brown-field .text-field').length,
-        count = 1;
-    
-        $( ".btn-Next" ).on('click', function() {
-      if (count == $count) {
-        return false;
-      } else {
-        $(".text-field img").animate({marginBottom: '-=500px'},350);
-        count++;
-        if (count != 1 && count < $count) {
-          $left.removeClass('x');
-          $right.removeClass('x');
-        } else if (count == $count) {
-          $right.addClass('x');
-        }
-      }
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "flex";
+
+    var dots = document.getElementsByClassName("numbertext");
+    if (n > dots.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = dots.length
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].style.display = "none";
+    }
+    dots[slideIndex - 1].style.display = "inline";
+}
+
+function showonlyone(thechosenone) {
+    $('.x').each(function(index) {
+         if ($(this).attr("id") == thechosenone) {
+              $(this).slideDown(200);
+         }
+         else {
+              $(this).hide(600);
+         }
     });
-    
-    $left.on('click', function() {
-      if (count != 1) {
-        $(".text-field img").animate({marginBottom: '+=500px'
-          }, 'slow');
-        count--;
-        if (count != 1 && count < $count) {
-          $left.removeClass('x');
-          $right.removeClass('x');
-        } else if (count == 1) {
-          $left.addClass('x');
-        }
-      }
-    });
-    
-  });
+}

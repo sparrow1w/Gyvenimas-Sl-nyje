@@ -41,154 +41,291 @@
                 <strong>Slėnyje</strong>
             </h1>
             <div class="btn-block">
-                <button class="btn-Prev x"><i class="fas fa-angle-left"></i></button>
-                <button class="btn-Next"><i class="fas fa-angle-right"></i></button>
+                <a class="btn-Prev" onclick="plusSlides(-1)">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+                <a class="btn-Next" onclick="plusSlides(1)">
+                    <i class="fas fa-angle-right"></i>
+                </a>
             </div>
 
             <div class="brown-field">
                 <div class="priv-box">
-                    <p>PRIVALUMAS NR. 1</p>
+                    <p>PRIVALUMAS NR.
+                        <span class="numbertext">1</span>
+                        <span class="numbertext">2</span>
+                        <span class="numbertext">3</span>
+                    </p>
                 </div>
-                <div class="text-field">
-                    <div class="picPosition">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
                         <img src="src/lake.jpg" alt="lake" width="410px" height="555px">
-                    </div>
-                    <article>
-                        <h1>Netoliese -
-                            <strong>Gilužio ežeras</strong>
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                        <button>
-                            <i class="fas fa-music"></i>Klausyti</button>
-                    </article>
-                </div>
-                <div class="text-field">
-                        <div class="picPosition">
-                            <img src="src/PREZENTACIJA1.jpg" alt="lake" width="410px" height="555px">
-                        </div>
-                        <article>
-                            <h1>ka=asfsdfa -
-                                <strong>Gilužio ežeras</strong>
-                            </h1>
-                            <p>sdafsdfsdfsdaf ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                            <button>
-                                <i class="fas fa-music"></i>Klausyti</button>
-                        </article>
-                    </div>
-                    <div class="text-field">
-                            <div class="picPosition">
-                                <img src="src/PREZENTACIJA1.jpg" alt="lake" width="410px" height="555px">
-                            </div>
+                        <div class="text">
                             <article>
-                                <h1>ka=asfsdfa -
+                                <h1>Netoliese -
                                     <strong>Gilužio ežeras</strong>
                                 </h1>
-                                <p>sdafsdfsdfsdaf ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 </p>
                                 <button>
                                     <i class="fas fa-music"></i>Klausyti</button>
                             </article>
                         </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="src/labanoras.jpg" alt="forest" width="410px" height="555px">
+                        <div class="text">
+                            <article>
+                                <h1>
+                                    <strong>Labanoro Regioninis parkas</strong>
+                                </h1>
+                                <p>Praesent non enim arcu. Etiam sit amet scelerisque ex, in rhoncus nunc. Integer et leo augue.
+                                    Vestibulum ut dictum felis, ac interdum eros. Proin dolor risus, mattis et euismod et,
+                                    ornare at nibh. Sed vehicula tincidunt massa at semper. Nulla sagittis ipsum quis hendrerit
+                                    facilisis. Phasellus tincidunt molestie ultrices.
+                                </p>
+                                <button>
+                                    <i class="fas fa-music"></i>Klausyti</button>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="src/kosmosas.jpg" alt="cosmodron" width="410px" height="555px">
+                        <div class="text">
+                            <article>
+                                <h1>
+                                    <strong>Etnokosmologijos muziejus</strong>
+                                </h1>
+                                <p>Donec maximus velit efficitur est suscipit, ac lacinia odio efficitur. Proin vel lectus nec
+                                    ipsum dapibus ultrices. Nulla facilisi. Sed ut odio nec nibh placerat suscipit vel nec
+                                    nunc. Mauris porttitor, diam nec maximus dictum, metus dui molestie nisl, sed ultrices
+                                    purus dolor accumsan quam. Etiam sagittis leo ut ultrices pulvinar.
+                                </p>
+                                <button>
+                                    <i class="fas fa-music"></i>Klausyti</button>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
             </div>
         </section>
         <section class="navPosition">
-            <h1>Vieta Mieste</h1>
+            <h1>Vieta
+                <strong>Mieste</strong>
+            </h1>
             <div class="map-field">
                 <div class="mini-menu">
                     <nav class="mini-items">
                         <ul>
                             <li>
-                                <a href="#">Shops</a>
+                                <span class="showShop" onclick="showonlyone(1)">
+                                    <img src="src/shopping-cart.svg" alt="shopping-cart" width="20px" height="20px">
+                                </span>
                             </li>
                             <li>
-                                <a href="#">library</a>
+                                <span class="showBook" onclick="showonlyone(2)">
+                                    <img src="src/book.svg" alt="school-list" width="20px" height="20px">
                             </li>
                             <li>
-                                <a href="#">Hospital</a>
+                                <span class="showHospital" onclick="showonlyone(3)">
+                                    <img src="src/hospital-sign.svg" alt="pharmacy" width="20px" height="20px">
+                                </span>
                             </li>
                             <li>
-                                <a href="#">schools</a>
+                                <span class="showKid" onclick="showonlyone(4)">
+                                    <img src="src/boy.svg" alt="kindergarten" width="20px" height="20px">
+                                </span>
                             </li>
                             <li>
-                                <a href="#">gyms</a>
+                                <span class="showGym" onclick="showonlyone(5)">
+                                    <img src="src/weightlifting.svg" alt="gyms" width="20px" height="20px">
+                                </span>
                             </li>
                             <li>
-                                <a href="#">Banks</a>
+                                <span class="showAtm" onclick="showonlyone(6)">
+                                    <img src="src/atm.svg" alt="ATM" width="20px" height="20px">
+                                </span>
                             </li>
                             <li>
-                                <a href="#">Parks</a>
+                                <span class="showRoute" onclick="showonlyone(7)">
+                                    <img src="src/route.svg" alt="parks" width="20px" height="20px">
+                                </span>
                             </li>
                         </ul>
                     </nav>
                     <div class="menu-list">
-                        <div class="shop-list">
-                            <ul>
-                                <li>pirma parduotuvė</li>
-                                <li>antra parduotuvė</li>
-                                <li>trečia parduotuvė</li>
-                                <li>ketvirta parduotuvė</li>
-                            </ul>
+                        <div class="shop-list x" id="1">
+                            <table>
+                                <tr>
+                                    <th>Parduotuvės</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>pirma parduotuvė</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr>
+                                    <td>antra parduotuvė</td>
+                                    <td>300</td>
+                                </tr>
+                                <tr>
+                                    <td>trečia parduotuvė</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>ketvirta parduotuvė</td>
+                                    <td>1200</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="library-list">
-                            <ul>
-                                <li>pirma biblioteka</li>
-                                <li>antra biblioteka</li>
-                                <li>trečia biblioteka</li>
-                                <li>ketvirta biblioteka</li>
-                            </ul>
+                        <div class="library-list x" id="2">
+                            <table>
+                                <tr>
+                                    <th>Mokymo įstaigos ir Bibliotekos</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>pirma mokykla</td>
+                                    <td>1500</td>
+                                </tr>
+                                <tr>
+                                    <td>antra mokykla</td>
+                                    <td>350</td>
+                                </tr>
+                                <tr>
+                                    <td>trečia mokykla</td>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <td>ketvirta mokykla</td>
+                                    <td>900</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="hospital-list">
-                            <ul>
-                                <li>Poliklinika</li>
-                                <li>Vaistinė "Pilanta"</li>
-                                <li>Šeimos sveikatos namai "Gyda"</li>
-                                <li>Marijos Vaistinė</li>
-                                <li>Eurovaistinė (prekybos centre "Pupa")</li>
-                                <li>B. Kiselienės sveikatingumo studija</li>
-                            </ul>
+                        <div class="hospital-list x" id="3">
+                            <table>
+                                <tr>
+                                    <th>Vaistinės ir Gydymo įstaigos</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Poliklinika</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr>
+                                    <td>Vaistinė "Pilanta"</td>
+                                    <td>600</td>
+                                </tr>
+                                <tr>
+                                    <td>Šeimos sveikatos namai "Gyda"</td>
+                                    <td>750</td>
+                                </tr>
+                                <tr>
+                                    <td>Marijos Vaistinė</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr>
+                                    <td>Eurovaistinė (prekybos centre "Pupa")</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <td>B. Kiselienės sveikatingumo studija</td>
+                                    <td>1200</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="school-list">
-                            <ul>
-                                <li>pirma mokykla</li>
-                                <li>antra mokykla</li>
-                                <li>trečia mokykla</li>
-                            </ul>
+                        <div class="school-list x" id="4">
+                            <table>
+                                <tr>
+                                    <th>Darželiai</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>pirmas darželis</td>
+                                    <td>300</td>
+                                </tr>
+                                <tr>
+                                    <td>antras darželis</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>trečias darželis</td>
+                                    <td>700</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="gym-list">
-                            <ul>
-                                <li>pirmas sporto klubas</li>
-                                <li>antras sporto klubas</li>
-                                <li>trečias sporto klubas</li>
-                            </ul>
+                        <div class="gym-list x" id="5">
+                            <table>
+                                <tr>
+                                    <th>Sporto ir sveikatingumo klubai</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>pirmas sporto klubas</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr>
+                                    <td>antras sporto klubas</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <td>trečias sporto klubas</td>
+                                    <td>1500</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="bank-list">
-                            <ul>
-                                <li>pirmas bankas</li>
-                                <li>antras bankas</li>
-                                <li>trečias bankas</li>
-                                <li>ketvirtas bankas</li>
-                            </ul>
+                        <div class="bank-list x" id="6">
+                            <table>
+                                <tr>
+                                    <th>Bankai ir bankomatai</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Bankas</td>
+                                    <td>2500</td>
+                                </tr>
+                                <tr>
+                                    <td>bankomatas nr. 1</td>
+                                    <td>1500</td>
+                                </tr>
+                                <tr>
+                                    <td>bankomatas nr. 2</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr>
+                                    <td>bankomatas nr. 3</td>
+                                    <td>900</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="park-list">
-                            <ul>
-                                <li>pirmas parkas</li>
-                                <li>antras parkas</li>
-                            </ul>
+                        <div class="park-list x" id="7">
+                            <table>
+                                <tr>
+                                    <th>Parkai</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Pirmas parkas</td>
+                                    <td>600</td>
+                                </tr>
+                                <tr>
+                                    <td>antras parkas</td>
+                                    <td>1500</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
-
+                <div id="map" style="width:700px; height:610px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6711.398994318665!2d25.170776220640978!3d54.704559590357455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1525706483205"
+                     height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <section class="slider">

@@ -1,3 +1,9 @@
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
 body {
   letter-spacing: 2px;
   margin: 0;
@@ -55,9 +61,11 @@ body {
         body .content .gallerySlide h1 strong {
           font-weight: 800; }
       body .content .gallerySlide .btn-block {
+        z-index: 999;
         position: relative;
         top: 60px;
-        left: 108px; }
+        left: 45px;
+        width: 80%; }
         body .content .gallerySlide .btn-block .btn-Prev,
         body .content .gallerySlide .btn-block .btn-Next {
           position: relative;
@@ -66,11 +74,58 @@ body {
           font-size: 20px;
           border: 1px solid white;
           border-radius: 5px;
-          padding: 8px 14px; }
+          padding: 8px 14px;
+          margin-left: 2px;
+          letter-spacing: 0; }
       body .content .gallerySlide .brown-field {
         display: grid;
         grid-template-columns: 1fr 6fr;
         height: 585px; }
+        body .content .gallerySlide .brown-field .slideshow-container {
+          display: flex;
+          background-color: #544838;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          width: 100%;
+          max-width: 1000px;
+          position: relative;
+          margin: auto; }
+          body .content .gallerySlide .brown-field .slideshow-container .mySlides {
+            display: flex; }
+            body .content .gallerySlide .brown-field .slideshow-container .mySlides img {
+              vertical-align: middle;
+              position: relative;
+              bottom: -85px;
+              right: -97px;
+              box-shadow: 15px 11px 75px 3px #0000008f; }
+            body .content .gallerySlide .brown-field .slideshow-container .mySlides .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              bottom: 8px;
+              flex: 1; }
+              body .content .gallerySlide .brown-field .slideshow-container .mySlides .text article {
+                color: #d0cbc3;
+                padding: 50px;
+                padding-right: 20px;
+                padding-left: 171px; }
+                body .content .gallerySlide .brown-field .slideshow-container .mySlides .text article h1 {
+                  color: #d0cbc3;
+                  margin-left: 0;
+                  font-size: 26px;
+                  margin-bottom: 30px; }
+                body .content .gallerySlide .brown-field .slideshow-container .mySlides .text article p {
+                  font-size: 15px; }
+                body .content .gallerySlide .brown-field .slideshow-container .mySlides .text article button {
+                  background-color: transparent;
+                  color: #b7b0a5;
+                  padding: 15px 20px;
+                  font-size: 13px;
+                  text-transform: uppercase;
+                  border: 1px solid #b7b0a5;
+                  border-radius: 5px; }
+                  body .content .gallerySlide .brown-field .slideshow-container .mySlides .text article button .fa-music:before {
+                    padding-right: 22px; }
         body .content .gallerySlide .brown-field .priv-box {
           display: flex;
           align-items: center;
@@ -79,6 +134,7 @@ body {
           grid-column-start: 1;
           grid-column-end: 2; }
           body .content .gallerySlide .brown-field .priv-box p {
+            white-space: nowrap;
             margin: 0;
             color: #706e6a;
             letter-spacing: 4px;
@@ -93,49 +149,60 @@ body {
             /* IE6,IE7 */
             -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
             /* IE8 */ }
-        body .content .gallerySlide .brown-field .text-field {
-          display: flex;
-          background-color: #544838;
-          grid-column-start: 2;
-          grid-column-end: 3;
-          width: 100%; }
-          body .content .gallerySlide .brown-field .text-field .picPosition {
-            display: block;
-            position: relative; }
-            body .content .gallerySlide .brown-field .text-field .picPosition img {
-              overflow: overlay;
-              position: relative;
-              bottom: -85px;
-              right: -97px;
-              box-shadow: 15px 11px 75px 3px #0000008f; }
-          body .content .gallerySlide .brown-field .text-field article {
-            flex: 1;
-            color: #d0cbc3;
-            padding: 50px;
-            padding-right: 208px;
-            padding-left: 171px; }
-            body .content .gallerySlide .brown-field .text-field article h1 {
-              color: #d0cbc3;
-              margin-left: 0;
-              font-size: 26px;
-              margin-bottom: 30px; }
-            body .content .gallerySlide .brown-field .text-field article p {
-              font-size: 15px; }
-            body .content .gallerySlide .brown-field .text-field article button {
-              background-color: transparent;
-              color: #b7b0a5;
-              padding: 15px 20px;
-              font-size: 13px;
-              text-transform: uppercase;
-              border: 1px solid #b7b0a5;
-              border-radius: 5px; }
-              body .content .gallerySlide .brown-field .text-field article button .fa-music:before {
-                padding-right: 22px; }
+            body .content .gallerySlide .brown-field .priv-box p .numbertext {
+              display: inline; }
     body .content .navPosition {
       grid-row-start: 3;
       grid-row-end: 4;
       background-color: #ece2d1;
       height: 870px; }
+      body .content .navPosition h1 {
+        color: #706e6a;
+        font-size: 26px;
+        margin-left: 100px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-transform: uppercase; }
+        body .content .navPosition h1 strong {
+          font-weight: 800; }
+      body .content .navPosition .map-field {
+        width: 80vw;
+        display: flex;
+        margin: auto;
+        background-color: #f7f3ec; }
+        body .content .navPosition .map-field .mini-menu {
+          width: 450px; }
+          body .content .navPosition .map-field .mini-menu .mini-items {
+            background-color: #584b3b; }
+            body .content .navPosition .map-field .mini-menu .mini-items ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              margin-right: 30px; }
+              body .content .navPosition .map-field .mini-menu .mini-items ul li {
+                float: left; }
+                body .content .navPosition .map-field .mini-menu .mini-items ul li span {
+                  display: block;
+                  text-align: center;
+                  padding: 9px;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  color: #afa9a3;
+                  margin-top: 20px;
+                  font-size: 14px;
+                  cursor: pointer; }
+        body .content .navPosition .map-field .menu-list {
+          padding: 10px;
+          width: 450px; }
+          body .content .navPosition .map-field .menu-list .x {
+            display: none; }
+          body .content .navPosition .map-field .menu-list .shop-list {
+            display: block; }
+          body .content .navPosition .map-field .menu-list div {
+            text-transform: capitalize; }
+            body .content .navPosition .map-field .menu-list div ul {
+              list-style: none; }
     body .content .slider img {
       width: 100%; }
     body .content .form {
@@ -143,5 +210,28 @@ body {
       grid-row-end: 6;
       background-color: #f7f3ec;
       height: 873px; }
+
+.form {
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #f7f3ec;
+  height: 873px; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
