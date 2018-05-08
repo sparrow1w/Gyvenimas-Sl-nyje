@@ -1,7 +1,4 @@
-// $( ".btn-Next" ).click(function() {
-//     $(".text-field" ).animate({width:'toggle'},350);
-//     $(".priv-box p").text("PRIVALUMAS NR. 2"),350;
-//   });
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -41,6 +38,8 @@ function showSlides(n) {
     dots[slideIndex - 1].style.display = "inline";
 }
 
+// Menu list changing
+
 function showonlyone(thechosenone) {
     $('.x').each(function(index) {
          if ($(this).attr("id") == thechosenone) {
@@ -51,3 +50,8 @@ function showonlyone(thechosenone) {
          }
     });
 }
+// Menu button clicked color change
+$('.mini-items ul li').click(function () {
+    $('.mini-items ul li').css('background-color', '#584b3b');
+    $(this).css('background-color', '#9eb46a');
+  });

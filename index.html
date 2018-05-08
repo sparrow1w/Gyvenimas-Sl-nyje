@@ -59,7 +59,7 @@
                 </div>
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img src="src/lake.jpg" alt="lake" width="410px" height="555px">
+                        <img src="src/lake.jpg" alt="lake" width="410" height="555">
                         <div class="text">
                             <article>
                                 <h1>Netoliese -
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="mySlides fade">
-                        <img src="src/labanoras.jpg" alt="forest" width="410px" height="555px">
+                        <img src="src/labanoras.jpg" alt="forest" width="410" height="555">
                         <div class="text">
                             <article>
                                 <h1>
@@ -94,7 +94,7 @@
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="src/kosmosas.jpg" alt="cosmodron" width="410px" height="555px">
+                        <img src="src/kosmosas.jpg" alt="cosmodron" width="410" height="555">
                         <div class="text">
                             <article>
                                 <h1>
@@ -123,38 +123,40 @@
                 <div class="mini-menu">
                     <nav class="mini-items">
                         <ul>
-                            <li>
-                                <span class="showShop" onclick="showonlyone(1)">
-                                    <img src="src/shopping-cart.svg" alt="shopping-cart" width="20px" height="20px">
+                            <li onclick="showonlyone(1)">
+                                <span class="showShop">
+                                    <img src="src/shopping-cart.svg" alt="shopping-cart" width="20" height="20">
                                 </span>
                             </li>
-                            <li>
-                                <span class="showBook" onclick="showonlyone(2)">
-                                    <img src="src/book.svg" alt="school-list" width="20px" height="20px">
-                            </li>
-                            <li>
-                                <span class="showHospital" onclick="showonlyone(3)">
-                                    <img src="src/hospital-sign.svg" alt="pharmacy" width="20px" height="20px">
+                            <li onclick="showonlyone(2)">
+                                <span class="showBook">
+                                    <img src="src/book.svg" alt="school-list" width="23" height="23">
                                 </span>
                             </li>
-                            <li>
-                                <span class="showKid" onclick="showonlyone(4)">
-                                    <img src="src/boy.svg" alt="kindergarten" width="20px" height="20px">
+
+                            <li onclick="showonlyone(3)">
+                                <span class="showHospital">
+                                    <img src="src/hospital-sign.svg" alt="pharmacy" width="23" height="23">
                                 </span>
                             </li>
-                            <li>
-                                <span class="showGym" onclick="showonlyone(5)">
-                                    <img src="src/weightlifting.svg" alt="gyms" width="20px" height="20px">
+                            <li onclick="showonlyone(4)">
+                                <span class="showKid">
+                                    <img src="src/boy.svg" alt="kindergarten" width="23" height="23">
                                 </span>
                             </li>
-                            <li>
-                                <span class="showAtm" onclick="showonlyone(6)">
-                                    <img src="src/atm.svg" alt="ATM" width="20px" height="20px">
+                            <li onclick="showonlyone(5)">
+                                <span class="showGym">
+                                    <img src="src/weightlifting.svg" alt="gyms" width="23" height="23">
                                 </span>
                             </li>
-                            <li>
-                                <span class="showRoute" onclick="showonlyone(7)">
-                                    <img src="src/route.svg" alt="parks" width="20px" height="20px">
+                            <li onclick="showonlyone(6)">
+                                <span class="showAtm">
+                                    <img src="src/atm.svg" alt="ATM" width="23" height="23">
+                                </span>
+                            </li>
+                            <li onclick="showonlyone(7)">
+                                <span class="showRoute">
+                                    <img src="src/route.svg" alt="parks" width="23" height="23">
                                 </span>
                             </li>
                         </ul>
@@ -162,169 +164,188 @@
                     <div class="menu-list">
                         <div class="shop-list x" id="1">
                             <table>
-                                <tr>
-                                    <th>Parduotuvės</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>pirma parduotuvė</td>
-                                    <td>900</td>
-                                </tr>
-                                <tr>
-                                    <td>antra parduotuvė</td>
-                                    <td>300</td>
-                                </tr>
-                                <tr>
-                                    <td>trečia parduotuvė</td>
-                                    <td>500</td>
-                                </tr>
-                                <tr>
-                                    <td>ketvirta parduotuvė</td>
-                                    <td>1200</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Parduotuvės</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>pirma parduotuvė</td>
+                                        <td>900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>antra parduotuvė</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>trečia parduotuvė</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ketvirta parduotuvė</td>
+                                        <td>1200</td>
+                                    </tr>
+                                </tbody>
+
                             </table>
                         </div>
                         <div class="library-list x" id="2">
                             <table>
-                                <tr>
-                                    <th>Mokymo įstaigos ir Bibliotekos</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>pirma mokykla</td>
-                                    <td>1500</td>
-                                </tr>
-                                <tr>
-                                    <td>antra mokykla</td>
-                                    <td>350</td>
-                                </tr>
-                                <tr>
-                                    <td>trečia mokykla</td>
-                                    <td>400</td>
-                                </tr>
-                                <tr>
-                                    <td>ketvirta mokykla</td>
-                                    <td>900</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Mokymo įstaigos ir Bibliotekos</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>pirma mokykla</td>
+                                        <td>1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>antra mokykla</td>
+                                        <td>350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>trečia mokykla</td>
+                                        <td>400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ketvirta mokykla</td>
+                                        <td>900</td>
+                                    </tr>
+                                </tbody>
+
                             </table>
                         </div>
                         <div class="hospital-list x" id="3">
                             <table>
-                                <tr>
-                                    <th>Vaistinės ir Gydymo įstaigos</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>Poliklinika</td>
-                                    <td>900</td>
-                                </tr>
-                                <tr>
-                                    <td>Vaistinė "Pilanta"</td>
-                                    <td>600</td>
-                                </tr>
-                                <tr>
-                                    <td>Šeimos sveikatos namai "Gyda"</td>
-                                    <td>750</td>
-                                </tr>
-                                <tr>
-                                    <td>Marijos Vaistinė</td>
-                                    <td>1200</td>
-                                </tr>
-                                <tr>
-                                    <td>Eurovaistinė (prekybos centre "Pupa")</td>
-                                    <td>800</td>
-                                </tr>
-                                <tr>
-                                    <td>B. Kiselienės sveikatingumo studija</td>
-                                    <td>1200</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Vaistinės ir Gydymo įstaigos</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Poliklinika</td>
+                                        <td>900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vaistinė "Pilanta"</td>
+                                        <td>600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Šeimos sveikatos namai "Gyda"</td>
+                                        <td>750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Marijos Vaistinė</td>
+                                        <td>1200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eurovaistinė (prekybos centre "Pupa")</td>
+                                        <td>800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B. Kiselienės sveikatingumo studija</td>
+                                        <td>1200</td>
+                                    </tr>
+                                </tbody>
+
                             </table>
                         </div>
                         <div class="school-list x" id="4">
                             <table>
-                                <tr>
-                                    <th>Darželiai</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>pirmas darželis</td>
-                                    <td>300</td>
-                                </tr>
-                                <tr>
-                                    <td>antras darželis</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <td>trečias darželis</td>
-                                    <td>700</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Darželiai</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>pirmas darželis</td>
+                                        <td>300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>antras darželis</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>trečias darželis</td>
+                                        <td>700</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                         <div class="gym-list x" id="5">
                             <table>
-                                <tr>
-                                    <th>Sporto ir sveikatingumo klubai</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>pirmas sporto klubas</td>
-                                    <td>900</td>
-                                </tr>
-                                <tr>
-                                    <td>antras sporto klubas</td>
-                                    <td>800</td>
-                                </tr>
-                                <tr>
-                                    <td>trečias sporto klubas</td>
-                                    <td>1500</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Sporto ir sveikatingumo klubai</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>pirmas sporto klubas</td>
+                                        <td>900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>antras sporto klubas</td>
+                                        <td>800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>trečias sporto klubas</td>
+                                        <td>1500</td>
+                                    </tr>
+                                </tbody>
+
                             </table>
                         </div>
                         <div class="bank-list x" id="6">
                             <table>
-                                <tr>
-                                    <th>Bankai ir bankomatai</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>Bankas</td>
-                                    <td>2500</td>
-                                </tr>
-                                <tr>
-                                    <td>bankomatas nr. 1</td>
-                                    <td>1500</td>
-                                </tr>
-                                <tr>
-                                    <td>bankomatas nr. 2</td>
-                                    <td>900</td>
-                                </tr>
-                                <tr>
-                                    <td>bankomatas nr. 3</td>
-                                    <td>900</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Bankai ir bankomatai</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Bankas</td>
+                                        <td>2500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bankomatas nr. 1</td>
+                                        <td>1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bankomatas nr. 2</td>
+                                        <td>900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bankomatas nr. 3</td>
+                                        <td>900</td>
+                                    </tr>
+                                </tbody>
+
                             </table>
                         </div>
                         <div class="park-list x" id="7">
                             <table>
-                                <tr>
-                                    <th>Parkai</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
-                                    <td>Pirmas parkas</td>
-                                    <td>600</td>
-                                </tr>
-                                <tr>
-                                    <td>antras parkas</td>
-                                    <td>1500</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>Parkai</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Pirmas parkas</td>
+                                        <td>600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>antras parkas</td>
+                                        <td>1500</td>
+                                    </tr>
+                                </tbody>
+
                             </table>
                         </div>
                     </div>
                 </div>
-                <div id="map" style="width:700px; height:610px">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6711.398994318665!2d25.170776220640978!3d54.704559590357455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1525706483205"
-                     height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6711.398994318665!2d25.170776220640978!3d54.704559590357455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1525706483205"></iframe>
                 </div>
             </div>
         </section>
@@ -332,32 +353,37 @@
             <img src="src/PREZENTACIJA1.jpg" alt="citus">
         </section>
         <section class="form">
-            <div class="contacts">
-                <h2>Kontaktai</h2>
-                <div class="first-contact">
-                    <p>Laura Žvaliauskaitė</p>
-                    <p>Pardavimų vadybininkė</p>
-                    <p>laura@cc.lt</p>
-                    <p>+37065556408</p>
+            <div class="form-container">
+                <div class="contacts">
+                    <h2>Kontaktai</h2>
+                    <div class="first-contact">
+                        <p>Laura Žvaliauskaitė</p>
+                        <p>Pardavimų vadybininkė</p>
+                        <p>laura@cc.lt</p>
+                        <p>+37065556408</p>
+                    </div>
+                    <div class="second-contact">
+                        <p>Monika Kuzminskaitė</p>
+                        <p>Pardavimų vadybininkė</p>
+                        <p>monika.k@cc.lt</p>
+                        <p>+37068202272</p>
+                    </div>
                 </div>
-                <div class="second-contact">
-                    <p>Monika Kuzminskaitė</p>
-                    <p>Pardavimų vadybininkė</p>
-                    <p>monika.k@cc.lt</p>
-                    <p>+37068202272</p>
-                </div>
+                <form name="login-form" action="/action_page.php" onsubmit="return onFormSubmit()" method="post">
+                    <h3>Laiko rezervacija susitikimui</h3>
+                    <input type="text" name="email" placeholder="El. paštas">
+                    <br>
+                    <input type="text" name="phone" placeholder="Telefonas">
+                    <br>
+                    <textarea id="myTextarea" name="comment" placeholder="Rezervuoju laiką susitikimui x d, x val."></textarea>
+                    <br>
+                    <input type="submit" value="Siųsti">
+                    <div id="p1"></div>
+                </form>
             </div>
-            <form name="login-form" action="/action_page.php" onsubmit="return onFormSubmit()" method="post">
-                <h3>Laiko rezervacija susitikimui</h3>
-                <input type="text" name="email" placeholder="El. paštas">
-                <br>
-                <input type="text" name="phone" placeholder="Telefonas">
-                <br>
-                <textarea id="myTextarea" name="comment" placeholder="Rezervuoju laiką susitikimui x d, x val."></textarea>
-                <br>
-                <input type="submit" value="Siųsti">
-                <div id="p1"></div>
-            </form>
+            <div class="susisiekite">
+                <p>Susisiekite Lorem Ipsum</p>
+            </div>
         </section>
         <footer>
             <p>©2016. Visos teisės saugomos</p>

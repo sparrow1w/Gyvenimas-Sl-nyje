@@ -1,11 +1,5 @@
 $brown: #584b3b;
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
+$fontColor: #706e6a;
 body {
     letter-spacing: 2px;
     margin: 0;
@@ -102,7 +96,6 @@ body {
                     grid-column-start: 2;
                     grid-column-end: 3;
                     width: 100%;
-                    max-width: 1000px;
                     position: relative;
                     margin: auto;
                     .mySlides {
@@ -202,7 +195,8 @@ body {
                 margin: auto;
                 background-color: #f7f3ec;
                 .mini-menu {
-                    width: 450px;
+                    width: 448px;
+                    height: 610px;
                     .mini-items {
                         background-color: $brown;
                         ul {
@@ -210,40 +204,88 @@ body {
                             margin: 0;
                             padding: 0;
                             overflow: hidden;
-                            margin-right: 30px;
                             li {
                                 float: left;
-                                span{
+                                width: 64px;
+                                height: 60px;
+                                span {
                                     display: block;
-                                    text-align: center;
-                                    padding: 9px;
+                                    text-align: center; // padding: 9px;
                                     text-decoration: none;
                                     text-transform: uppercase;
                                     color: #afa9a3;
                                     margin-top: 20px;
                                     font-size: 14px;
                                     cursor: pointer;
-                                    
+                                    border-right: .5px solid #706e6a;
                                 }
+                            }
+                            li:nth-child(1) {
+                                background-color: #9eb46a;
                             }
                         }
                     }
                 }
                 .menu-list {
                     padding: 10px;
-                    width: 450px;
-                    .x{
+                    width: 448px;
+                    .x {
                         display: none;
                     }
-                    .shop-list{
+                    .shop-list {
                         display: block;
                     }
-                    div{
+                    div {
                         text-transform: capitalize;
-                        ul{
-                            list-style: none;
+                        table {
+                            width: 79%;
+                            height: 100%;
+                            margin: 35px;
+                            border-collapse: collapse;
+                            tr {
+                                list-style: none;
+                                border-bottom: 1px solid #ece2d1;
+                                th {
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                    color: $fontColor;
+                                    padding-bottom: 23px;
+                                    font-weight: 800;
+                                    text-align: left;
+                                    padding-top: 15px;
+                                    letter-spacing: 0;
+                                    border-bottom: none;
+                                }
+                                td {
+                                    color: $fontColor;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                    font-size: 15px;
+                                    letter-spacing: 0;
+                                }
+                                td:nth-child(1) {
+                                    float: left;
+                                }
+                                td:nth-child(2) {
+                                    float: right;
+                                    font-weight: 600;
+                                }
+                            }
+                            tr:nth-child(1) {
+                                border: none;
+                            }
+                            tr:last-child {
+                                border: none;
+                            }
                         }
                     }
+                }
+            }
+            #map {
+                flex: 1;
+                iframe {
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -265,7 +307,62 @@ body {
     grid-row-start: 5;
     grid-row-end: 6;
     background-color: #f7f3ec;
-    height: 873px
+    height: 873px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    height: 625px;
+    .form-container {
+        background-color: #ece2d1;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 625px;
+        margin-top: 90px;
+        form {
+            width: 500px;
+            height: 600px;
+            vertical-align: middle;
+            position: relative;
+            bottom: -74px;
+            right: 80px;
+            box-shadow: 15px 11px 75px 3px #0000008f;
+            background-color: #584b3b;
+        }
+        .contacts {
+            font-size: 15px;
+            padding: 8px 12px;
+            bottom: 8px;
+            flex: 1;
+        }
+    }
+    .susisiekite {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7f3ec;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        p {
+            white-space: nowrap;
+            margin: 0;
+            color: #706e6a;
+            letter-spacing: 4px;
+            font-size: 12px;
+            -moz-transform: rotate(-90.0deg);
+            /* FF3.5+ */
+            -o-transform: rotate(-90.0deg);
+            /* Opera 10.5 */
+            -webkit-transform: rotate(-90.0deg);
+            /* Saf3.1+, Chrome */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+            /* IE6,IE7 */
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+            /* IE8 */
+            .numbertext {
+                display: inline;
+            }
+        }
+    }
 }
 
 .fade {
