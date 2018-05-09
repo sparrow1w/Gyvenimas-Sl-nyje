@@ -1,5 +1,5 @@
 body {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif; }
@@ -73,7 +73,7 @@ body {
           letter-spacing: 0; }
       body .content .gallerySlide .brown-field {
         display: grid;
-        grid-template-columns: 1fr 6fr;
+        grid-template-columns: 1fr 7fr;
         height: 585px; }
         body .content .gallerySlide .brown-field .slideshow-container {
           display: flex;
@@ -250,7 +250,7 @@ body {
   background-color: #f7f3ec;
   height: 873px;
   display: grid;
-  grid-template-columns: 6fr 1fr;
+  grid-template-columns: 7fr 1fr;
   height: 625px; }
   .form .form-container {
     background-color: #ece2d1;
@@ -268,11 +268,91 @@ body {
       right: 80px;
       box-shadow: 15px 11px 75px 3px #0000008f;
       background-color: #584b3b; }
+      .form .form-container form h3 {
+        color: #ece2d1;
+        text-align: center;
+        padding-top: 52px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 18px; }
+        .form .form-container form h3 strong {
+          font-weight: 900; }
+      .form .form-container form input[type=text],
+      .form .form-container form input[type=email],
+      .form .form-container form input[type=text] {
+        font-size: 18px;
+        color: #ece2d1;
+        background: #584b3b;
+        border: none;
+        border-bottom: 1px solid #ece2d1;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 67%;
+        padding-bottom: 10px;
+        padding-top: 26px; }
+      .form .form-container form input[type=submit] {
+        color: #ece2d1;
+        background: #879f55;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 105px;
+        height: 40px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 14px;
+        float: left;
+        margin-left: 83px;
+        margin-top: 50px; }
     .form .form-container .contacts {
       font-size: 15px;
       padding: 8px 12px;
       bottom: 8px;
       flex: 1; }
+      .form .form-container .contacts h2 {
+        color: #706e6a;
+        font-size: 26px;
+        margin-left: 100px;
+        margin-top: 110px;
+        margin-bottom: 70px;
+        text-transform: uppercase;
+        font-weight: 800; }
+      .form .form-container .contacts .contacts-field {
+        display: flex;
+        margin: 10px;
+        margin-left: 100px; }
+        .form .form-container .contacts .contacts-field .first-contact {
+          flex: 1; }
+          .form .form-container .contacts .contacts-field .first-contact img {
+            object-fit: cover;
+            object-position: 50% 0%; }
+          .form .form-container .contacts .contacts-field .first-contact p:nth-of-type(1) {
+            color: black;
+            font-weight: 600; }
+          .form .form-container .contacts .contacts-field .first-contact p {
+            color: #706e6a; }
+            .form .form-container .contacts .contacts-field .first-contact p img {
+              width: 15px;
+              margin-right: 9px;
+              bottom: -2px;
+              position: relative; }
+        .form .form-container .contacts .contacts-field .second-contact {
+          flex: 1; }
+          .form .form-container .contacts .contacts-field .second-contact img {
+            object-fit: cover;
+            object-position: 50% 0%; }
+          .form .form-container .contacts .contacts-field .second-contact p {
+            color: #706e6a; }
+            .form .form-container .contacts .contacts-field .second-contact p img {
+              width: 15px;
+              margin-right: 9px;
+              bottom: -2px;
+              position: relative; }
+          .form .form-container .contacts .contacts-field .second-contact p:nth-of-type(1) {
+            color: black;
+            font-weight: 600; }
   .form .susisiekite {
     display: flex;
     align-items: center;
@@ -298,6 +378,16 @@ body {
       /* IE8 */ }
       .form .susisiekite p .numbertext {
         display: inline; }
+
+footer {
+  background-color: #302d28;
+  color: #706e6a;
+  height: 90px;
+  position: relative; }
+  footer p {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
 
 .fade {
   -webkit-animation-name: fade;

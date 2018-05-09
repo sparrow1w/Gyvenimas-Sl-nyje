@@ -356,26 +356,31 @@
             <div class="form-container">
                 <div class="contacts">
                     <h2>Kontaktai</h2>
-                    <div class="first-contact">
-                        <p>Laura Žvaliauskaitė</p>
-                        <p>Pardavimų vadybininkė</p>
-                        <p>laura@cc.lt</p>
-                        <p>+37065556408</p>
+                    <div class="contacts-field">
+                        <div class="first-contact">
+                            <img src="src/Laura Zvaliauskaite.jpg" alt="vadybibinkė" width="170" height="150">
+                            <p>Laura Žvaliauskaitė</p>
+                            <p>Pardavimų vadybininkė</p>
+                            <p><img src="src/close-envelope.svg" alt="email">laura@cc.lt</p>
+                            <p><img src="src/phone-receiver.svg" alt="phone">+37065556408</p>
+                        </div>
+                        <div class="second-contact">
+                            <img src="src/Monika Kuzminskaite.jpg" alt="monika" width="170" height="150">
+                            <p>Monika Kuzminskaitė</p>
+                            <p>Pardavimų vadybininkė</p>
+                            <p><img src="src/close-envelope.svg" alt="email">monika.k@cc.lt</p>
+                            <p><img src="src/phone-receiver.svg" alt="phone">+37068202272</p>
+                        </div>
                     </div>
-                    <div class="second-contact">
-                        <p>Monika Kuzminskaitė</p>
-                        <p>Pardavimų vadybininkė</p>
-                        <p>monika.k@cc.lt</p>
-                        <p>+37068202272</p>
-                    </div>
+
                 </div>
                 <form name="login-form" action="/action_page.php" onsubmit="return onFormSubmit()" method="post">
-                    <h3>Laiko rezervacija susitikimui</h3>
-                    <input type="text" name="email" placeholder="El. paštas">
+                    <h3><strong>Laiko</strong> rezervacija susitikimui</h3>
+                    <input type="email" name="email" placeholder="El. paštas">
                     <br>
                     <input type="text" name="phone" placeholder="Telefonas">
                     <br>
-                    <textarea id="myTextarea" name="comment" placeholder="Rezervuoju laiką susitikimui x d, x val."></textarea>
+                    <input type="text" name="comment" placeholder="Rezervuoju laiką susitikimui x d, x val.">
                     <br>
                     <input type="submit" value="Siųsti">
                     <div id="p1"></div>
