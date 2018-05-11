@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyvenimas Slėnyje</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -34,6 +35,18 @@
                         <a href="#">Kotedžai</a>
                     </li>
                 </ul>
+                <div class="dropdown">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Naujienos</a>
+                        <a href="#">Gyventojams</a>
+                        <a href="#">Galerija</a>
+                        <a href="#">Gyvenimas Slėnyje</a>
+                        <a href="#">Kotedžai</a>
+                    </div>
+                </div>
             </nav>
         </header>
         <section class="gallerySlide">
@@ -124,37 +137,75 @@
                     <nav class="mini-items">
                         <ul>
                             <li onclick="showonlyone(1)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showShop">
                                     <img src="src/shopping-cart.svg" alt="shopping-cart" width="20" height="20">
                                 </span>
+
                             </li>
                             <li onclick="showonlyone(2)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showBook">
                                     <img src="src/book.svg" alt="school-list" width="23" height="23">
                                 </span>
+
                             </li>
 
                             <li onclick="showonlyone(3)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showHospital">
                                     <img src="src/hospital-sign.svg" alt="pharmacy" width="23" height="23">
                                 </span>
+
                             </li>
                             <li onclick="showonlyone(4)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showKid">
                                     <img src="src/boy.svg" alt="kindergarten" width="23" height="23">
                                 </span>
                             </li>
                             <li onclick="showonlyone(5)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showGym">
                                     <img src="src/weightlifting.svg" alt="gyms" width="23" height="23">
                                 </span>
                             </li>
                             <li onclick="showonlyone(6)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showAtm">
                                     <img src="src/atm.svg" alt="ATM" width="23" height="23">
                                 </span>
                             </li>
                             <li onclick="showonlyone(7)">
+                                <div class="tear">
+                                    <p class="pop-text">
+                                        OVER/
+                                        <br>ACTIVE</p>
+                                </div>
                                 <span class="showRoute">
                                     <img src="src/route.svg" alt="parks" width="23" height="23">
                                 </span>
@@ -355,32 +406,37 @@
         <section class="form">
             <div class="form-container">
                 <div class="contacts">
-                    <h2>Kontaktai</h2>
+                    <h1>Kontaktai</h1>
                     <div class="contacts-field">
                         <div class="first-contact">
-                            <img src="src/Laura Zvaliauskaite.jpg" alt="vadybibinkė" width="170" height="150">
+                            <img src="src/Laura-Zvaliauskaite.jpg" alt="vadybibinkė" width="170" height="150">
                             <p>Laura Žvaliauskaitė</p>
                             <p>Pardavimų vadybininkė</p>
-                            <p><img src="src/close-envelope.svg" alt="email">laura@cc.lt</p>
-                            <p><img src="src/phone-receiver.svg" alt="phone">+37065556408</p>
+                            <p>
+                                <img src="src/close-envelope.svg" alt="email">laura@cc.lt</p>
+                            <p>
+                                <img src="src/phone-receiver.svg" alt="phone">+37065556408</p>
                         </div>
                         <div class="second-contact">
-                            <img src="src/Monika Kuzminskaite.jpg" alt="monika" width="170" height="150">
+                            <img src="src/Monika-Kuzminskaite.jpg" alt="monika" width="170" height="150">
                             <p>Monika Kuzminskaitė</p>
                             <p>Pardavimų vadybininkė</p>
-                            <p><img src="src/close-envelope.svg" alt="email">monika.k@cc.lt</p>
-                            <p><img src="src/phone-receiver.svg" alt="phone">+37068202272</p>
+                            <p>
+                                <img src="src/close-envelope.svg" alt="email">monika.k@cc.lt</p>
+                            <p>
+                                <img src="src/phone-receiver.svg" alt="phone">+37068202272</p>
                         </div>
                     </div>
 
                 </div>
                 <form name="login-form" action="/action_page.php" onsubmit="return onFormSubmit()" method="post">
-                    <h3><strong>Laiko</strong> rezervacija susitikimui</h3>
+                    <h3>
+                        <strong>Laiko</strong> rezervacija susitikimui</h3>
                     <input type="email" name="email" placeholder="El. paštas">
                     <br>
                     <input type="text" name="phone" placeholder="Telefonas">
                     <br>
-                    <input type="text" name="comment" placeholder="Rezervuoju laiką susitikimui x d, x val.">
+                    <input type="text" name="comment" id="textArea" placeholder="Rezervuoju laiką susitikimui x d, x val.">
                     <br>
                     <input type="submit" value="Siųsti">
                     <div id="p1"></div>
@@ -391,8 +447,10 @@
             </div>
         </section>
         <footer>
+            <p>e-solution:
+                <strong>Gaumina</strong>
+            </p>
             <p>©2016. Visos teisės saugomos</p>
-            <p>e-solution: Gaumina</p>
         </footer>
     </div>
     <script src="js/some.js"></script>

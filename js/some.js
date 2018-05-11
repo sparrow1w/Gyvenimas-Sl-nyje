@@ -1,4 +1,10 @@
+$(document).ready(function() {
+    $('.dropdown a .fa-bars').click(function() {
+        $(".dropdown-content").toggleClass('show');
+    })
+});
 
+// Slider integration
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -55,3 +61,39 @@ $('.mini-items ul li').click(function () {
     $('.mini-items ul li').css('background-color', '#584b3b');
     $(this).css('background-color', '#9eb46a');
   });
+
+//   Form validation
+
+function onFormSubmit() {
+    var email = document.forms['login-form']['email'].value;
+    var phone = document.forms['login-form']['phone'].value;
+    var message = document.getElementById("textArea").value;
+    var elementas = document.getElementById('p1');
+
+
+    if (email == "") {
+        elementas.innerHTML = "Įveskite savo el pašto adresą!";
+        elementas.className = "red-alert";
+        return false;
+
+    }else if (phone == "") {
+        elementas.innerHTML = "Įveskite savo tel. numerį!";
+        elementas.className = "red-alert";
+        return false;
+
+    }else if (!/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g.test(phone)) {
+        elementas.innerHTML = "Neteisingas telefono mureis";
+        elementas.className = "red-alert";
+        return false;
+    
+    }else if (message == "") {
+        elementas.innerHTML  = "Įrašykite žinutę!";
+        elementas.className = "red-alert";
+        return false;
+    }else {
+        elementas.innerHTML = "Laikas rezervuotas, greitu metu mes su jumis susisieksime!";
+        elementas.className = "green-alert";
+        return true;
+
+    }
+}
